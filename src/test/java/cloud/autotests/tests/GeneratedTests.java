@@ -18,7 +18,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class GeneratedTests extends TestBase {
     public static ProjectConfig config = ConfigFactory.create(ProjectConfig.class, System.getProperties());
-    String baseUrl = config.baseUrl();
+    String baseUrl = "https://www.t1-consulting.ru";
     @Test
     @Description("Soon to be implemented by you (or QA.GURU engineers)")
     @DisplayName("Проверка страницы услуг")
