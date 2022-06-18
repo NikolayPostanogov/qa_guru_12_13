@@ -16,13 +16,10 @@ import org.junit.jupiter.api.extension.ExtendWith;
 
 @ExtendWith({AllureJunit5.class})
 public class TestBase {
-    @BeforeAll
-    static void beforeAll() {
-        DriverSettings.configure();
-    }
 
     @BeforeEach
     public void beforeEach() {
+        DriverSettings.configure();
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
     }
 
