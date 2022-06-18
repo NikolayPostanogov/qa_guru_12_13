@@ -19,4 +19,6 @@ public interface ProjectConfig extends Config {
     String browserMobileView();
     String remoteDriverUrl();
     String videoStorage();
+    @DefaultValue("https://www.t1-consulting.ru")
+    String baseUrl();
 }
